@@ -1,29 +1,51 @@
-# Awesome Continuous API Testing & Quality Gates [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<div align="center">
 
-> A curated list of Continuous API Testing tools, automated CI/CD quality gate solutions, API contract validators, synthetic monitoring, and shift-left testing platforms.
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Continuous API Testing &amp; Quality Gates" width="100%">
+</p>
 
-Automating API validation within CI/CD pipelines ensures rapid feedback, eliminates regression bottlenecks, and prevents breaking contracts or vulnerabilities from escaping into production.
+# 🚀 Awesome Continuous API Testing & Quality Gates
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates?style=flat-square&color=blue" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+<p align="center">
+  <b>A curated list of Continuous API Testing tools, automated CI/CD quality gate solutions, API contract validators, synthetic monitoring, and shift-left testing platforms.</b>
+</p>
+
+<p align="center">
+  Automating API validation within CI/CD pipelines ensures rapid feedback, eliminates regression bottlenecks, and prevents breaking contracts or vulnerabilities from escaping into production. 🛡️⚡
+</p>
+
+</div>
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Hosted Quality Gate Platforms](#saas--hosted-quality-gate-platforms)
-- [Open-Source CI/CD Quality Gate Projects](#open-source-cicd-quality-gate-projects)
-- [Key CI/CD Integration Patterns](#key-cicd-integration-patterns)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Quality Gate Platforms](#️-saas--hosted-quality-gate-platforms)
+- [🛠️ Open-Source CI/CD Quality Gate Projects](#️-open-source-cicd-quality-gate-projects)
+- [🔄 Key CI/CD Integration Patterns](#-key-cicd-integration-patterns)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
+- [⚖️ Disclaimer](#️-disclaimer)
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global API testing and automated continuous quality gates market is estimated at **$2.14B to $3.20B in 2026** (expanding at an 18–22% CAGR), driven by microservices architectures, cloud-native deployments, and DevSecOps adoption. The sector is **moderately fragmented**: developer workflows and CLI execution remain decentralized across a rich open-source ecosystem, while enterprise governance, synthetic monitoring, and security gating are consolidating around dominant platform winners (such as Datadog, Postman, SonarSource, and Tricentis).
 
 ---
 
-## SaaS & Hosted Quality Gate Platforms
+## ☁️ SaaS & Hosted Quality Gate Platforms
 
 The table below lists leading commercial Continuous API Testing and CI/CD Quality Gate platforms, sorted by **Company Size (Market Cap / Valuation / Revenue)** in descending order.
 
@@ -41,7 +63,7 @@ The table below lists leading commercial Continuous API Testing and CI/CD Qualit
 
 ---
 
-## Open-Source CI/CD Quality Gate Projects
+## 🛠️ Open-Source CI/CD Quality Gate Projects
 
 The table below lists community-driven open-source projects for API testing, contract linting, mock servers, and CI/CD quality gate execution, sorted by **GitHub Stars** in descending order.
 
@@ -62,29 +84,45 @@ The table below lists community-driven open-source projects for API testing, con
 
 ---
 
-## Key CI/CD Integration Patterns
+## 🔄 Key CI/CD Integration Patterns
 
 Continuous API testing relies on five core quality gate patterns:
 
-1. **API Contract & Style Linting (Shift-Left Gate)**: Tools like **Spectral** run during pull request checks to prevent non-compliant OpenAPI schemas from being committed.
-2. **Automated Smoke & Functional Checks**: Run via **Newman**, **Hurl**, or **Tavern** against freshly deployed staging or ephemeral environments with zero-exit-code assertions.
-3. **Consumer-Driven Contract Verification**: Tools like **Pact** verify that provider code changes do not break downstream consumer expectations using `can-i-deploy` gating.
-4. **Performance & Concurrency Regression Gates**: Fast load tests executed via **k6** or **Gatling** to assert latency SLA thresholds (e.g., p95 < 200ms) before promotion to production.
-5. **Security Gating & Dependency Scanning**: Scanning tools like **OWASP ZAP** or **Snyk** fail builds when critical API vulnerabilities or unpatched library CVEs are introduced.
+1. **API Contract & Style Linting (Shift-Left Gate)** 📝: Tools like **Spectral** run during pull request checks to prevent non-compliant OpenAPI schemas from being committed.
+2. **Automated Smoke & Functional Checks** 🔍: Run via **Newman**, **Hurl**, or **Tavern** against freshly deployed staging or ephemeral environments with zero-exit-code assertions.
+3. **Consumer-Driven Contract Verification** 🤝: Tools like **Pact** verify that provider code changes do not break downstream consumer expectations using `can-i-deploy` gating.
+4. **Performance & Concurrency Regression Gates** ⏱️: Fast load tests executed via **k6** or **Gatling** to assert latency SLA thresholds (e.g., p95 < 200ms) before promotion to production.
+5. **Security Gating & Dependency Scanning** 🔒: Scanning tools like **OWASP ZAP** or **Snyk** fail builds when critical API vulnerabilities or unpatched library CVEs are introduced.
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
-1. Fork this repository.
-2. Add or update tools in `README.md` following the existing format.
-3. For SaaS tools, include the official link, company size/valuation, specific starting price, and exact free tier/trial duration and limits.
-4. For open-source tools, ensure proper GitHub link, social white star badge linking to stargazers, license, and concise description.
-5. Submit a Pull Request with a clear summary of your additions.
+1. 🍴 Fork this repository.
+2. ✏️ Add or update tools in `README.md` following the existing format.
+3. 💼 For SaaS tools, include the official link, company size/valuation, specific starting price, and exact free tier/trial duration and limits.
+4. 🌟 For open-source tools, ensure proper GitHub link, social white star badge linking to stargazers, license, and concise description.
+5. 🚀 Submit a Pull Request with a clear summary of your additions.
 
 ---
 
-## Disclaimer
+##  Star History
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+Thank you for exploring and using this repository! If you find this curated ecosystem list helpful for your QA pipelines, DevSecOps infrastructure, or developer workflows, please consider supporting the project:
+
+- ⭐ **Star this repository** on GitHub to help others discover it.
+- 🍴 **Fork and contribute** tools, tutorials, and pipeline templates.
+- 📢 **Share it** with your engineering team, QA peers, and on social channels.
+- ☕ **Buy a coffee & sponsor**: Support continuous maintenance and curated open-source research via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚖️ Disclaimer
 
 - This repository is a community-curated list and does not constitute an endorsement of any listed service or software.
 - Pricing, trial policies, and tier specifications change frequently; please verify current details on the respective vendors' websites.
