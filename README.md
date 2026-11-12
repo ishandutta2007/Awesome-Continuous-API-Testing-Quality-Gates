@@ -1,6 +1,6 @@
 # Awesome-Continuous-API-Testing-Quality-Gates
 
-# Top Continuous API Testing & Quality Gates Ecosystem
+## Top Continuous API Testing & Quality Gates Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on CI/CD Pipeline Testing, Automated Quality Gates & Shift-Left API Validation*  
