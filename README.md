@@ -1,75 +1,91 @@
-# Awesome-Continuous-API-Testing-Quality-Gates
+# Awesome Continuous API Testing & Quality Gates [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Continuous API Testing & Quality Gates Ecosystem
+> A curated list of Continuous API Testing tools, automated CI/CD quality gate solutions, API contract validators, synthetic monitoring, and shift-left testing platforms.
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on CI/CD Pipeline Testing, Automated Quality Gates & Shift-Left API Validation*  
-**Last updated: March 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Continuous API Testing & Quality Gates**. These tools embed API validation directly into CI/CD pipelines—running automated tests on every commit, enforcing pass/fail gates before deployment, and surfacing regressions before they reach production.
-
-**Examples** include Postman CI/CD Testing, mabl, Testim, Datadog Synthetic Monitoring, SonarQube, Snyk, Newman, BlazeMeter, Speedscale, and Loadmill (the category leaders).
-
-**Open-source emphasis**: This section highlights every major active project for self-hosted API testing, open-source quality gates, and community-driven CI tooling—ideal for QA engineers, platform teams, and developers building transparent, vendor-neutral pipelines without per-test or per-run cloud pricing.
-
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Postman CI/CD Testing](https://www.postman.com/)** | Postman CLI runs collections, monitors, and spec linting directly in CI/CD pipelines. GitHub Action available for native workflow integration. Returns exit codes for pass/fail gating . | Free (included with Postman account) | **Free tier is now single-user only** (March 2026 change). CLI itself is free to use; team workspaces require paid plans . |
-| **[mabl](https://www.mabl.com/)** | AI-native low-code test automation with CI/CD integrations. Auto-healing tests, API testing, and quality gates for deployment pipelines . | Core: $500/month (annual, unlimited runs, API testing); Starter tier available at lower cost | **14-day full-featured free trial** ($0); **no permanent free plan** — mabl is a paid tool . |
-| **[Testim (Tricentis)](https://www.testim.io/)** | Low-code AI-powered test automation with CI/CD pipeline integration. Smart locators and parallel execution. | $450/month starting price (Software Advice listing) | Free trial available; no permanent free tier . |
-| **[Datadog Synthetic Monitoring](https://www.datadoghq.com/)** | API and browser synthetic tests that run on schedules or trigger via CI/CD. Per-check pricing: API tests $5/1K runs, browser tests $12/1K runs (browser ~2.5x API cost) . | $5 per 1,000 API test runs; $12 per 1,000 browser test runs . | No free tier for synthetic monitoring; trial via Datadog sales . |
-| **[SonarQube Cloud](https://www.sonarsource.com/)** | Static analysis and code quality gates. Integrates with CI/CD to block merges on quality/security failures. Three plans: Free, Team, Enterprise. Billed per private LOC . | Free plan available; Team/Enterprise subscription per organization (monthly/yearly) . | **Free plan**: available for open-source and small private projects; Team/Enterprise for larger teams . |
-| **[Snyk](https://snyk.io/)** | Developer security platform with CI/CD integration for SCA, SAST, IaC, and container scanning. Quality gates block builds on vulnerability thresholds . | **$25/month** starting price (paid plans); custom enterprise quotes . | **Free**: $0/month per contributing developer; limits: Open Source 200 tests, Code 100 tests, IaC 300 tests, Container 100 tests . |
-| **[BlazeMeter](https://www.blazemeter.com/)** | Performance and API testing platform with CI/CD integration. JMeter-compatible load testing and API functional testing at scale . | Basic: $1,188/year (1,000 concurrent users, 200 tests/year); Pro: $5,988/year (5,000 concurrent users) . | No free tier; free trial available via BlazeMeter . |
-| **[Speedscale](https://speedscale.com/)** | Traffic replay and API testing for Kubernetes. Captures production traffic and replays it as CI tests to validate API changes against real-world patterns. | Quote-only (enterprise contract) | Free trial available via sales |
-| **[Loadmill](https://www.loadmill.com/)** | AI-assisted API testing and load testing. Generates tests from recorded traffic and integrates with CI/CD pipelines. | Quote-only (per-test or subscription) | Free trial available |
-| **[Newman (Postman)](https://www.postman.com/)** | Command-line collection runner for Postman. The original open-source CI tool for Postman collections. | Free (open-source, Apache-2.0) | **Free forever**: full functionality, no cost |
-
-## Open-Source GitHub Projects
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Newman](https://github.com/postmanlabs/newman)** | [![Stars](https://img.shields.io/github/stars/postmanlabs/newman?style=social&color=white)](https://github.com/postmanlabs/newman/stargazers) | Command-line collection runner for Postman (Apache-2.0). Runs collections from CLI for automated API testing in CI/CD pipelines. The reference implementation for Postman-based CLI testing and quality gates . |
-| **[Hurl](https://github.com/Orange-OpenSource/hurl)** | [![Stars](https://img.shields.io/github/stars/Orange-OpenSource/hurl?style=social&color=white)](https://github.com/Orange-OpenSource/hurl/stargazers) | Run and test HTTP requests with plain text (Apache-2.0). Supports JSONPath, XPath, response assertions, and CI integration. Lightweight Rust binary with no runtime required. |
-| **[Tavern](https://github.com/taverntesting/tavern)** | [![Stars](https://img.shields.io/github/stars/taverntesting/tavern?style=social&color=white)](https://github.com/taverntesting/tavern/stargazers) | Pytest plugin and CLI for automated API testing with YAML syntax (MIT). Supports REST, MQTT, and gRPC. Integrates with pytest ecosystem for fixtures, hooks, and HTML reports. |
-| **[Dredd](https://github.com/apiaryio/dredd)** | [![Stars](https://img.shields.io/github/stars/apiaryio/dredd?style=social&color=white)](https://github.com/apiaryio/dredd/stargazers) | Language-agnostic HTTP API testing tool (MIT). Validates API implementations against OpenAPI documents. Maintained fork available via Docker Hub. |
-
-### Additional Strong Open-Source Options
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Spectral](https://github.com/stoplightio/spectral)** | [![Stars](https://img.shields.io/github/stars/stoplightio/spectral?style=social&color=white)](https://github.com/stoplightio/spectral/stargazers) | Open-source API linting and governance tool. Enforces API style guides and contract rules as a CI quality gate. |
-| **[k6](https://github.com/grafana/k6)** | [![Stars](https://img.shields.io/github/stars/grafana/k6?style=social&color=white)](https://github.com/grafana/k6/stargazers) | Open-source load testing tool (AGPL-3.0) with CLI. Can be used as a performance quality gate in CI pipelines. |
-| **[OWASP ZAP](https://github.com/zaproxy/zaproxy)** | [![Stars](https://img.shields.io/github/stars/zaproxy/zaproxy?style=social&color=white)](https://github.com/zaproxy/zaproxy/stargazers) | Open-source API security scanner with CI/CD integration. Can enforce security quality gates on API deployments. |
-
-**Frameworks for building custom systems**: Combine **Newman** for Postman collection execution, **Hurl** for plain-text HTTP testing, **Tavern** for YAML-driven API tests with pytest, and **Spectral** for API contract linting—creating a fully open-source CI quality gate stack without per-test cloud pricing.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- CI/CD quality gates execute API requests and can affect staging or production systems if misconfigured; use environment-specific base URLs, secrets management, and test data isolation.
-- Pricing varies significantly: mabl requires $500/month for unlimited runs (no free plan), Datadog charges per 1,000 test runs, and SonarQube/Snyk offer genuine free tiers for small teams. Postman's March 2026 restructure removed team workspaces from the free tier—existing teams may need to migrate to Newman or alternative platforms .
+Automating API validation within CI/CD pipelines ensures rapid feedback, eliminates regression bottlenecks, and prevents breaking contracts or vulnerabilities from escaping into production.
 
 ---
 
-**Made for QA engineers, platform teams, DevOps practitioners, and developers building automated quality gates.**  
-Let's make continuous API testing more open, scriptable, and CI-native.
+## Table of Contents
+
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Hosted Quality Gate Platforms](#saas--hosted-quality-gate-platforms)
+- [Open-Source CI/CD Quality Gate Projects](#open-source-cicd-quality-gate-projects)
+- [Key CI/CD Integration Patterns](#key-cicd-integration-patterns)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+---
+
+## Sector Overview & Market Dynamics
+
+The global API testing and automated continuous quality gates market is estimated at **$2.14B to $3.20B in 2026** (expanding at an 18–22% CAGR), driven by microservices architectures, cloud-native deployments, and DevSecOps adoption. The sector is **moderately fragmented**: developer workflows and CLI execution remain decentralized across a rich open-source ecosystem, while enterprise governance, synthetic monitoring, and security gating are consolidating around dominant platform winners (such as Datadog, Postman, SonarSource, and Tricentis).
+
+---
+
+## SaaS & Hosted Quality Gate Platforms
+
+The table below lists leading commercial Continuous API Testing and CI/CD Quality Gate platforms, sorted by **Company Size (Market Cap / Valuation / Revenue)** in descending order.
+
+| Product | Company Size (Valuation / Revenue) | Description | Starting Pricing | Free Tier / Trial Limits |
+|:---|:---|:---|:---|:---|
+| **[Datadog Synthetic Monitoring](https://www.datadoghq.com/)** | **~$40B+ Market Cap** ($4.52B ARR guidance) | API and multi-step browser synthetic tests triggered on-demand via CI/CD pipelines or continuous schedules with SLA/SLO breach gates. | **$5 per 1,000 API test runs** ($12 per 1,000 browser test runs) | **14-day free trial** (full platform access including synthetic API & browser tests; no permanent free tier) |
+| **[SonarQube Cloud](https://www.sonarsource.com/)** | **$4.7B Valuation** ($412M funding, 21k+ enterprise clients) | Cloud-based static code analysis and automated quality gates that block PR merges on security vulnerabilities, bugs, and API spec violations. | **$34/month** (Team plan starting at 100k LOC; billed monthly or annually) | **Free forever plan**: Unlimited analysis for public open-source repos; up to **50,000 Lines of Code (LOC)** for private repositories |
+| **[Testim (Tricentis)](https://www.testim.io/)** | **$4.5B Valuation** (~$500M ARR; Tricentis) | AI-powered test automation and API quality gates with automated locator healing, parallel execution, and CI/CD gate triggers. | **$450/month** (starting price for commercial tiers) | **Community free-forever plan**: Up to **1,000 test runs per month** (plus a 14-day Virtual Mobile Grid trial) |
+| **[Postman](https://www.postman.com/)** | **$5.6B Valuation** (~$313M ARR) | API platform with Postman CLI and GitHub Actions integration to run collections, validate schemas, and enforce quality gate exit codes in CI/CD. | **$19/user/month** (Team plan, billed annually; Solo tier at $9/user/month) | **Free forever plan**: 1 user only, unlimited collection runs locally, up to **1,000 cloud monitor runs/month**, 50 AI credits/month |
+| **[Snyk](https://snyk.io/)** | **$7.4B Peak Valuation** (~$310M ARR) | Developer security platform enforcing PR quality gates across API dependencies (SCA), API code vulnerabilities (SAST), and container specs. | **$25/month** per contributing developer (Team plan) | **Free forever plan**: 1 contributing developer; includes **200 Open Source tests/month**, 100 Code tests/month, 300 IaC tests/month |
+| **[BlazeMeter](https://www.blazemeter.com/)** | **Perforce: ~$800M Revenue** (Clearlake Capital-backed) | Enterprise continuous performance, load, and API functional testing platform with CI/CD quality gate enforcement. | **$99/month** ($1,188/year for Basic plan; 1,000 concurrent virtual users, 200 tests/year) | **Free Starter plan (forever)**: **50 max virtual users**, 10 tests/month, 20-min max test duration, 1,000 API monitoring calls/month (14-day trial for enterprise features) |
+| **[mabl](https://www.mabl.com/)** | **~$360M Valuation** (~$18M ARR; $77M funding) | AI-native low-code test automation with CI/CD integrations, API validation, auto-healing assertions, and deployment pipeline gates. | **$500/month** (Core plan, billed annually; Starter tier available via custom quote) | **14-day free trial** ($0 full-featured trial with API testing and CI integration; no permanent free plan) |
+| **[Speedscale](https://speedscale.com/)** | **~$9M Venture Funding** (~$5M ARR) | Production traffic replay and API simulation for Kubernetes and microservices to run regression and load quality gates in CI. | **$0.01 per MB ingested** (SaaS model, ~$10/GB) or $0.01/GB RAM (BYOC model); local CLI dev is $0 | **30-day free trial** (full access to enterprise features, no credit card required; free local dev via `proxymock`) |
+| **[Loadmill](https://www.loadmill.com/)** | **Seed Stage Funding** (~$1.7M ARR; UpWest/Gefen Capital) | AI-driven continuous API testing and synthetic load generator that creates test suites from network traffic and runs them in CI/CD pipelines. | **$240/month** (Team tier starting price for automated test execution) | **Free tier**: Up to **100 API test runs per month** ($0 forever; custom demo available for enterprise workloads) |
+
+---
+
+## Open-Source CI/CD Quality Gate Projects
+
+The table below lists community-driven open-source projects for API testing, contract linting, mock servers, and CI/CD quality gate execution, sorted by **GitHub Stars** in descending order.
+
+| Project | Stars | License | Description |
+|:---|:---:|:---:|:---|
+| **[k6](https://github.com/grafana/k6)** | [![k6 Stars](https://img.shields.io/github/stars/grafana/k6?style=social&color=white)](https://github.com/grafana/k6/stargazers) | AGPL-3.0 | Modern load and API performance testing tool written in Go with JavaScript test scripting. Built for CI pipelines to establish latency, throughput, and error rate quality gates. |
+| **[Hurl](https://github.com/Orange-OpenSource/hurl)** | [![Hurl Stars](https://img.shields.io/github/stars/Orange-OpenSource/hurl?style=social&color=white)](https://github.com/Orange-OpenSource/hurl/stargazers) | Apache-2.0 | Ultra-fast CLI tool powered by curl and Rust to run HTTP requests defined in simple plain text. Evaluates JSONPath, XPath, regex assertions, and returns CI gate exit codes. |
+| **[OWASP ZAP](https://github.com/zaproxy/zaproxy)** | [![OWASP ZAP Stars](https://img.shields.io/github/stars/zaproxy/zaproxy?style=social&color=white)](https://github.com/zaproxy/zaproxy/stargazers) | Apache-2.0 | World's most widely used web and REST API security scanner. Integrates into GitHub Actions and GitLab CI to fail builds when security vulnerabilities exceed threshold severity. |
+| **[Karate](https://github.com/karatelabs/karate)** | [![Karate Stars](https://img.shields.io/github/stars/karatelabs/karate?style=social&color=white)](https://github.com/karatelabs/karate/stargazers) | MIT | Unified test automation framework combining API testing, mocks, performance testing, and UI automation in a readable Cucumber-like BDD syntax. |
+| **[WireMock](https://github.com/wiremock/wiremock)** | [![WireMock Stars](https://img.shields.io/github/stars/wiremock/wiremock?style=social&color=white)](https://github.com/wiremock/wiremock/stargazers) | Apache-2.0 | Flexible tool for stubbing and mocking HTTP APIs. Enables hermetic continuous testing in CI/CD by mocking external downstream third-party dependencies and edge cases. |
+| **[Newman](https://github.com/postmanlabs/newman)** | [![Newman Stars](https://img.shields.io/github/stars/postmanlabs/newman?style=social&color=white)](https://github.com/postmanlabs/newman/stargazers) | Apache-2.0 | CLI collection runner for Postman. The canonical open-source runner for executing Postman collections, validating environments, and enforcing pipeline quality gates. |
+| **[Gatling](https://github.com/gatling/gatling)** | [![Gatling Stars](https://img.shields.io/github/stars/gatling/gatling?style=social&color=white)](https://github.com/gatling/gatling/stargazers) | Apache-2.0 | High-performance load and API stress testing framework based on Scala, Java, and Kotlin. Perfect for CI/CD regression gates with code-as-configuration test definitions. |
+| **[Dredd](https://github.com/apiaryio/dredd)** | [![Dredd Stars](https://img.shields.io/github/stars/apiaryio/dredd?style=social&color=white)](https://github.com/apiaryio/dredd/stargazers) | MIT | Language-agnostic CLI tool for testing API contracts. Validates backend responses against OpenAPI 2/3 and API Blueprint definitions directly in CI environments. |
+| **[Schemathesis](https://github.com/schemathesis/schemathesis)** | [![Schemathesis Stars](https://img.shields.io/github/stars/schemathesis/schemathesis?style=social&color=white)](https://github.com/schemathesis/schemathesis/stargazers) | MIT | Modern property-based API testing tool for OpenAPI and GraphQL. Automatically generates thousands of test cases from specifications to detect crashes, spec deviations, and edge cases. |
+| **[Spectral](https://github.com/stoplightio/spectral)** | [![Spectral Stars](https://img.shields.io/github/stars/stoplightio/spectral?style=social&color=white)](https://github.com/stoplightio/spectral/stargazers) | Apache-2.0 | Flexible JSON/YAML linter and API contract governance tool. Enforces API style guides, OpenAPI schema validity, and security best practices as a pull request quality gate. |
+| **[Pact JS](https://github.com/pact-foundation/pact-js)** | [![Pact JS Stars](https://img.shields.io/github/stars/pact-foundation/pact-js?style=social&color=white)](https://github.com/pact-foundation/pact-js/stargazers) | MIT | Contract testing library for HTTP APIs and message queues in Node.js/TypeScript. Enables consumer-driven contract testing and `can-i-deploy` CI/CD quality gates. |
+| **[Tavern](https://github.com/taverntesting/tavern)** | [![Tavern Stars](https://img.shields.io/github/stars/taverntesting/tavern?style=social&color=white)](https://github.com/taverntesting/tavern/stargazers) | MIT | Pytest-based CLI and automated API testing framework using YAML syntax. Supports REST, MQTT, and gRPC with native integration into the Python testing ecosystem. |
+
+---
+
+## Key CI/CD Integration Patterns
+
+Continuous API testing relies on five core quality gate patterns:
+
+1. **API Contract & Style Linting (Shift-Left Gate)**: Tools like **Spectral** run during pull request checks to prevent non-compliant OpenAPI schemas from being committed.
+2. **Automated Smoke & Functional Checks**: Run via **Newman**, **Hurl**, or **Tavern** against freshly deployed staging or ephemeral environments with zero-exit-code assertions.
+3. **Consumer-Driven Contract Verification**: Tools like **Pact** verify that provider code changes do not break downstream consumer expectations using `can-i-deploy` gating.
+4. **Performance & Concurrency Regression Gates**: Fast load tests executed via **k6** or **Gatling** to assert latency SLA thresholds (e.g., p95 < 200ms) before promotion to production.
+5. **Security Gating & Dependency Scanning**: Scanning tools like **OWASP ZAP** or **Snyk** fail builds when critical API vulnerabilities or unpatched library CVEs are introduced.
+
+---
+
+## How to Contribute
+
+1. Fork this repository.
+2. Add or update tools in `README.md` following the existing format.
+3. For SaaS tools, include the official link, company size/valuation, specific starting price, and exact free tier/trial duration and limits.
+4. For open-source tools, ensure proper GitHub link, social white star badge linking to stargazers, license, and concise description.
+5. Submit a Pull Request with a clear summary of your additions.
+
+---
+
+## Disclaimer
+
+- This repository is a community-curated list and does not constitute an endorsement of any listed service or software.
+- Pricing, trial policies, and tier specifications change frequently; please verify current details on the respective vendors' websites.
+- Continuous quality gates execute network requests against target environments; ensure non-destructive test accounts, secrets masking, and isolated staging environments are properly configured in your CI pipelines.
