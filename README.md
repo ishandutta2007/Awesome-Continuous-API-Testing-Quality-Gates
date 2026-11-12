@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Continuous-API-Testing-Quality-Gates/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -65,9 +65,9 @@ The table below lists leading commercial Continuous API Testing and CI/CD Qualit
 
 ## 🛠️ Open-Source CI/CD Quality Gate Projects
 
-The table below lists community-driven open-source projects for API testing, contract linting, mock servers, and CI/CD quality gate execution, sorted by **GitHub Stars** in descending order.
+The table below lists community-driven open-source projects for API testing, contract linting, mock servers, and CI/CD quality gate execution, sorted by **GitHub_Stars** in descending order.
 
-| Project | Stars | License | Description |
+| Project | GitHub_Stars | License | Description |
 |:---|:---:|:---:|:---|
 | **[k6](https://github.com/grafana/k6)** | [![k6 Stars](https://img.shields.io/github/stars/grafana/k6?style=social&color=white)](https://github.com/grafana/k6/stargazers) | AGPL-3.0 | Modern load and API performance testing tool written in Go with JavaScript test scripting. Built for CI pipelines to establish latency, throughput, and error rate quality gates. |
 | **[Hurl](https://github.com/Orange-OpenSource/hurl)** | [![Hurl Stars](https://img.shields.io/github/stars/Orange-OpenSource/hurl?style=social&color=white)](https://github.com/Orange-OpenSource/hurl/stargazers) | Apache-2.0 | Ultra-fast CLI tool powered by curl and Rust to run HTTP requests defined in simple plain text. Evaluates JSONPath, XPath, regex assertions, and returns CI gate exit codes. |
@@ -101,7 +101,7 @@ Continuous API testing relies on five core quality gate patterns:
 1. 🍴 Fork this repository.
 2. ✏️ Add or update tools in `README.md` following the existing format.
 3. 💼 For SaaS tools, include the official link, company size/valuation, specific starting price, and exact free tier/trial duration and limits.
-4. 🌟 For open-source tools, ensure proper GitHub link, social white star badge linking to stargazers, license, and concise description.
+4. 🌟 For open-source tools, ensure proper GitHub link, social white Stars_Badge linking to stargazers, license, and concise description.
 5. 🚀 Submit a Pull Request with a clear summary of your additions.
 
 ---
